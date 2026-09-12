@@ -73,6 +73,9 @@ Each folder is self-contained: a piece of bait, an exact "try it" recipe, and a 
 | 04 | [Poisoned dependency](scenarios/04-poisoned-dependency) | "Set up this package" → a CHANGELOG comment gives orders | Supply-chain / context poisoning |
 | 05 | [Poisoned MCP tool](scenarios/05-poisoned-mcp-tool) | A tool's *description* carries instructions ("tool poisoning") | OWASP ASI / tool poisoning |
 | 06 | [Unicode smuggling](scenarios/06-unicode-smuggling) | Instructions invisible to you, plain text to the model | Steganographic injection |
+| 07 | [Poisoned rules file](scenarios/07-poisoned-rules-file) | `CLAUDE.md`/`AGENTS.md`/`.cursorrules` auto-loaded on open — no "read this" step | Context poisoning |
+| 08 | [Poisoned PR review](scenarios/08-poisoned-pr-review) | "Review this PR" → the description/commit hijacks the reviewer | Indirect prompt injection |
+| 09 | [Poisoned image (OCR)](scenarios/09-poisoned-image-ocr) | "Describe this screenshot" → hidden text in the image gives orders | Multimodal injection |
 
 More scenarios are planned — see [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome.
 

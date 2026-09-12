@@ -75,6 +75,9 @@ Hər qovluq özü-özünə tamdır: bir "yem" (bait), dəqiq "sınaq" resepti v�
 | 04 | [Zəhərlənmiş asılılıq](scenarios/04-poisoned-dependency) | "Bu paketi qur" → CHANGELOG şərhi əmr verir | Tədarük zənciri / kontekst zəhərlənməsi |
 | 05 | [Zəhərlənmiş MCP aləti](scenarios/05-poisoned-mcp-tool) | Alətin *təsviri* təlimat daşıyır ("tool poisoning") | OWASP ASI / tool poisoning |
 | 06 | [Unicode qaçaqmalçılığı](scenarios/06-unicode-smuggling) | Sənə görünməz, modelə düz mətn olan təlimatlar | Steqanoqrafik injection |
+| 07 | [Zəhərlənmiş rules faylı](scenarios/07-poisoned-rules-file) | `CLAUDE.md`/`AGENTS.md`/`.cursorrules` repo açılanda avtomatik yüklənir — "oxu" addımı yoxdur | Kontekst zəhərlənməsi |
+| 08 | [Zəhərlənmiş PR review](scenarios/08-poisoned-pr-review) | "Bu PR-a bax" → təsvir/commit revieweri ələ keçirir | Dolayı prompt injection |
+| 09 | [Zəhərlənmiş şəkil (OCR)](scenarios/09-poisoned-image-ocr) | "Bu skrinшotu təsvir et" → şəkildəki gizli mətn əmr verir | Multimodal injection |
 
 Daha çox ssenari planlaşdırılır — bax [CONTRIBUTING.md](CONTRIBUTING.md). PR-lar açıqdır.
 
