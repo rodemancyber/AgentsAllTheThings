@@ -1,0 +1,14 @@
+# Loot captured by the local sink during demos — never commit
+sink/loot/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
