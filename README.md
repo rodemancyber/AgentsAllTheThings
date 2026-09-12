@@ -15,6 +15,8 @@ then wire up the defenses that block it.
 
 `[ prompt injection ]` · `[ tool poisoning ]` · `[ data exfiltration ]` · `[ unicode smuggling ]`
 
+**🌐 English · [Azərbaycanca](README.az.md)**
+
 </div>
 
 ---
@@ -59,11 +61,11 @@ More scenarios are planned — see [CONTRIBUTING.md](CONTRIBUTING.md). PRs welco
 ## Quick start (60 seconds)
 
 ```bash
-git clone https://github.com/<you>/AgentsAllTheThings
+git clone https://github.com/rodemancyber/AgentsAllTheThings
 cd AgentsAllTheThings
 
 # 1. Start the local loot sink (a fake attacker endpoint on 127.0.0.1)
-python sink/sink.py
+python sink/sink.py   # on Windows, if `python` opens the Store, use `py sink/sink.py`
 ```
 
 Then, in **another terminal**, open your coding agent (Claude Code, Cursor, Codex, …)
