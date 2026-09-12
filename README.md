@@ -1,6 +1,6 @@
 <div align="center">
 
-# AgentsAllTheThings
+<img src="assets/banner.png" alt="AgentsAllTheThings" width="100%">
 
 ### A hands-on catalog of how coding agents get hijacked — and how to stop it.
 
@@ -27,6 +27,22 @@ then wire up the defenses that block it.
 > [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings).
 > Every payload targets a **local loot sink** you run yourself. Use it only on
 > agents and machines you own or are authorized to test. See [SECURITY.md](SECURITY.md).
+
+## How a hijack works
+
+```mermaid
+flowchart LR
+    A["Untrusted content<br/>README · issue · web page<br/>dependency · MCP tool"] --> B["Agent obeys<br/>hidden instruction"] --> C["Reads local<br/>.env / secrets"] --> D["Exfil to 127.0.0.1 sink<br/>(fake data — proves hijack)"]
+    H1["strip_hidden_unicode"] --> A
+    H2["block_secret_reads"] --> C
+    H3["egress_allowlist"] --> D
+    classDef atk fill:#241016,stroke:#ff5d73,color:#ffd9df,stroke-width:2px;
+    classDef def fill:#08130f,stroke:#22e39a,color:#c6ffe8,stroke-width:2px;
+    class A,B,C,D atk
+    class H1,H2,H3 def
+```
+
+<div align="center"><sub>Red = the attack path · Green = the defenses that break each leg (in <a href="defenses">defenses/</a>)</sub></div>
 
 ## Why this exists
 

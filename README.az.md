@@ -1,6 +1,6 @@
 <div align="center">
 
-# AgentsAllTheThings
+<img src="assets/banner.png" alt="AgentsAllTheThings" width="100%">
 
 ### Kod agentlərinin necə ələ keçirildiyini — və bunun qarşısını necə almağı — göstərən praktiki kolleksiya.
 
@@ -27,6 +27,22 @@ sonra onu bloklayan müdafiələri qurmaqdır.
 > [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) ruhunda.
 > Hər payload sənin özünün işə saldığı **lokal loot sink**-ə yönəlir. Yalnız sənə məxsus
 > və ya test etməyə icazən olan agent və maşınlarda istifadə et. Bax: [SECURITY.md](SECURITY.md).
+
+## Ələ keçirmə necə baş verir
+
+```mermaid
+flowchart LR
+    A["Etibarsız məzmun<br/>README · issue · veb səhifə<br/>asılılıq · MCP aləti"] --> B["Agent gizli<br/>təlimatı icra edir"] --> C["Lokal .env /<br/>secret oxuyur"] --> D["127.0.0.1 sink-ə exfil<br/>(saxta data — sübutdur)"]
+    H1["strip_hidden_unicode"] --> A
+    H2["block_secret_reads"] --> C
+    H3["egress_allowlist"] --> D
+    classDef atk fill:#241016,stroke:#ff5d73,color:#ffd9df,stroke-width:2px;
+    classDef def fill:#08130f,stroke:#22e39a,color:#c6ffe8,stroke-width:2px;
+    class A,B,C,D atk
+    class H1,H2,H3 def
+```
+
+<div align="center"><sub>Qırmızı = hücum yolu · Yaşıl = hər ayağı qıran müdafiələr (<a href="defenses">defenses/</a>-də)</sub></div>
 
 ## Niyə mövcuddur
 
