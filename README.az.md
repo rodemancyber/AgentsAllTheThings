@@ -15,6 +15,8 @@ sonra onu bloklayan müdafiələri qurmaqdır.
 
 `[ prompt injection ]` · `[ tool poisoning ]` · `[ data exfiltration ]` · `[ unicode smuggling ]`
 
+<img src="assets/demo.gif" alt="'Bu README-ni xülasə et' tapşırığı agentin .env oxuyub lokal sink-ə göndərməsinə çevrilir" width="82%">
+
 **🌐 [English](README.md) · Azərbaycanca**
 
 </div>

@@ -15,6 +15,8 @@ then wire up the defenses that block it.
 
 `[ prompt injection ]` · `[ tool poisoning ]` · `[ data exfiltration ]` · `[ unicode smuggling ]`
 
+<img src="assets/demo.gif" alt="A 'summarize this README' task turns into the agent reading .env and sending it to a local sink" width="82%">
+
 **🌐 English · [Azərbaycanca](README.az.md)**
 
 </div>
